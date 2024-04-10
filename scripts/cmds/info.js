@@ -43,10 +43,10 @@ module.exports = {
     const botPrefix = global.GoatBot.config.prefix;
     const authorName = global.GoatBot.config.authorName;
     const authorFB = global.GoatBot.config.authorFB;
-    const authorInsta = "https://www.instagram.com/xnil867";
+    const authorInsta = "𝘀𝗲𝗰𝗿𝗲𝘁";
     const authorEmail = global.GoatBot.config.authorEmail;
-    const authorGithub = "https://github.com/X-nil143";
-    const status = "𝙎𝙞𝙣𝙜𝙡𝙚";
+    const authorGithub = "𝗦𝗲𝗰𝗿𝗲𝘁";
+    const status = "𝗜 𝗵𝗮𝘃𝗲 𝗮 𝗴𝗶𝗿𝗹𝗳𝗿𝗶𝗲𝗻𝗱.";
     const timeStart = Date.now();
 
     const urls = JSON.parse(fs.readFileSync('scripts/cmds/xnil/info.json'));

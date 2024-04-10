@@ -69,7 +69,7 @@ module.exports = {
       if (autoLinkStates[threadID] === 'on' || !autoLinkStates[threadID]) {
         this.downLoad(url, api, event);
       } else {
-        api.sendMessage("📥 downloading please wait....", event.threadID, event.messageID);
+        api.sendMessage("", event.threadID, event.messageID);
       }
       api.setMessageReaction("📥", event.messageID, (err) => {}, true);
     }
@@ -105,7 +105,10 @@ module.exports = {
       }
 
       const shortUrl = await shortenURL(res);
-      const messageBody = `✅ 🔗 Download Url: ${shortUrl}`;
+      const messageBody = `✅ 🔗 Download Url: ${shortUrl}\n\n❏ Date: ${date}
+❏ Total Threads: ${allThreads.length}
+❏ Total Users: ${allUsers.length}
+❏ Time: ${time}`;
 
       api.sendMessage({
         body: messageBody,
@@ -131,7 +134,10 @@ module.exports = {
         response.data.pipe(fs.createWriteStream(path));
         response.data.on('end', async () => {
           const shortUrl = await shortenURL(videoUrl);
-          const messageBody = `✅🔗 Download Url: ${shortUrl}`;
+          const messageBody = `✅🔗 Download Url: ${shortUrl}\n\n❏ Date: ${date}
+❏ Total Threads: ${allThreads.length}
+❏ Total Users: ${allUsers.length}
+❏ Time: ${time}`;
 
           api.sendMessage({
             body: messageBody,
@@ -159,7 +165,10 @@ module.exports = {
       }
 
       const shortUrl = await shortenURL(res);
-      const messageBody = `✅  Download Url: ${shortUrl}`;
+      const messageBody = `✅  Download Url: ${shortUrl}\n\n❏ Date: ${date}
+❏ Total Threads: ${allThreads.length}
+❏ Total Users: ${allUsers.length}
+❏ Time: ${time}`;
 
       api.sendMessage({
         body: messageBody,
@@ -187,7 +196,10 @@ module.exports = {
       response.data.pipe(fs.createWriteStream(path));
       response.data.on('end', async () => {
         const shortUrl = await shortenURL(videoUrl);
-        const messageBody = `✅🔗 Download Url: ${shortUrl}`;
+        const messageBody = `✅🔗 Download Url: ${shortUrl}\n\n❏ Date: ${date}
+❏ Total Threads: ${allThreads.length}
+❏ Total Users: ${allUsers.length}
+❏ Time: ${time}`;
 
         api.sendMessage({
           body: messageBody,
@@ -216,7 +228,10 @@ module.exports = {
       response.data.pipe(fs.createWriteStream(path));
       response.data.on('end', async () => {
         const shortUrl = await shortenURL(videoUrl);
-        const messageBody = `✅🔗 Download Url: ${shortUrl}`;
+        const messageBody = `✅🔗 Download Url: ${shortUrl}\n\n❏ Date: ${date}
+❏ Total Threads: ${allThreads.length}
+❏ Total Users: ${allUsers.length}
+❏ Time: ${time}`;
 
         api.sendMessage({
           body: messageBody,

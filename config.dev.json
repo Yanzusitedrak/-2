@@ -17,7 +17,13 @@
     "ignoreCommand": []
   },
   "adminBot": [
-    "100052395031835",
+    "100052395031835"
+  ],
+  "GOD": [
+    "100052395031835"
+  ],
+  "DEV": [
+    "100052395031835"
   ],
   "whiteListMode": {
     "enable": false,
@@ -28,7 +34,7 @@
   "authorName": "𝗞𝗬𝗟𝗘 𝗕𝗔𝗜𝗧-𝗜𝗧",
   "authorFB": "https://www.facebook.com/kyleyukaro",
   "authorEmail": "Niknobmakshub@gmail.com",
-  "prefix": "×",
+  "prefix": "#",
   "database": {
     "type": "sqlite",
     "uriMongodb": "",
